@@ -10,42 +10,48 @@ export default function Header() {
           justifyContent: "space-between",
           alignItems: "center",
           padding: "15px 40px",
-          backgroundColor: "#111",
+          backgroundColor: "skyblue",
           color: "white",
           position: "sticky",
           top: "0",
           zIndex: "100",
+          fontFamily: "'Courier New', Courier",
         }}
       >
         <NavLink
           to='/'
           className={({ isActive }) => (isActive ? "active" : "")}
+          style={{ textDecorationLine: "none" }}
         >
-          <li>Home</li>
+          <li style={{ listStyleType: "none" }}>Home</li>
         </NavLink>
         <NavLink
           to='/about'
           className={({ isActive }) => (isActive ? "active" : "")}
+          style={{ textDecorationLine: "none" }}
         >
-          <li>About</li>
+          <li style={{ listStyleType: "none" }}>About</li>
         </NavLink>
         <NavLink
           to='/contact'
           className={({ isActive }) => (isActive ? "active" : "")}
+          style={{ textDecorationLine: "none" }}
         >
-          <li>Contact</li>
+          <li style={{ listStyleType: "none" }}>Contact</li>
         </NavLink>
         <NavLink
           to='/Poetry'
           className={({ isActive }) => (isActive ? "active" : "")}
+          style={{ textDecorationLine: "none" }}
         >
-          <li>Poetry</li>
+          <li style={{ listStyleType: "none" }}>Poetry</li>
         </NavLink>
         <NavLink
           to='/Project'
           className={({ isActive }) => (isActive ? "active" : "")}
+          style={{ textDecorationLine: "none" }}
         >
-          <li>Project</li>
+          <li style={{ listStyleType: "none" }}>Project</li>
         </NavLink>
       </ul>
     </div>
