@@ -1,4 +1,7 @@
-import React from "react";
+import { useContext } from "react";
+import Usercontext from "./Usercontext";
+
 export default function Footer() {
-  return <></>;
+  const { NAME } = useContext(Usercontext);
+  return <>hello {NAME}</>;
 }

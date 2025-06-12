@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Usercontext from "./component/Usercontext";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "./component/header";
@@ -21,7 +22,10 @@ const App = () => {
         <Route path='/Poetry' element={<Poetry />} />
         <Route path='/Project' element={<Project />} />
       </Routes>
-      <Footer />
+
+      <Usercontext.Provider value={{ NAME: "rude" }}>
+        <Footer />
+      </Usercontext.Provider>
     </Router>
   );
 };

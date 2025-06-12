@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homelogo from "../../Assets/home-main.svg";
 import Type from "./Type";
+import Home2 from "./Home2";
 export default function Home() {
   return (
     <>
@@ -32,6 +33,7 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
+        <Home2 />
       </section>
     </>
   );
